@@ -4,6 +4,7 @@ var DOMAINMASHUP = {
 	"unavailable": "unavailable",
 	"displayWrapper": "ul",
 	"displayItem": "li",
+	"domainType": ".com",
 	"words": [],
 	"names": [],
 	"startSearch": function(id){
@@ -71,7 +72,7 @@ var DOMAINMASHUP = {
 	},
 	"lookupDomain": function(){
 		//looks up one domain at a time
-		var domain = this.names[this.nameIndex]+'.com',
+		var domain = this.names[this.nameIndex]+this.domainType,
 		hasBeenChecked = false,
 		timeOut = 1000 * 0,
 		self = this;
@@ -102,7 +103,7 @@ var DOMAINMASHUP = {
 				}
 			);
 		}else{
-			console.log(this.names[this.nameIndex]+'.com: '+hasBeenChecked);
+			console.log(this.names[this.nameIndex]+this.domainType+': '+hasBeenChecked);
 			this.goToNextName();
 		}
 	},
