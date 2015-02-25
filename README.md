@@ -12,7 +12,7 @@ This demo creates domain name variations based on a [JSON file](http://sjmac.com
 Something I just threw together and wanted to share, as it's a handy tool that replaced me going between Excel sheets and domain lookup sites! 
 
 # Installation
-Simple. Load `js/domainmashup.js`, and make sure `php/lookup.php` is inlcuded in your project.
+Simple: Point to the `js/domainmashup.js` file, and make sure `php/lookup.php` is inlcuded in your project.
 
 #APIs
 You'll need to create a free account with [freedomainapi.com](http://freedomainapi.com/), and update `$apiKey` in `lookup.php`.
@@ -48,7 +48,7 @@ The following HTML markup is required:
 </div>
 ```
 
-Initiate the lookup by calling the `startSearch` method with the ID matching the JSON file uploaded to the `data` directory. 
+Initiate the lookup by calling the `startSearch()` method with the ID matching the JSON file uploaded to the `data` directory. 
 
 `DOMAINMASHUP.startSearch(id);`
 
