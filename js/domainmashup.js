@@ -85,7 +85,7 @@ var DOMAINMASHUP = {
 		}
 
 		if(hasBeenChecked == false){
-			$.get('lookup.php?query=checkdomain&domain='+domain,
+			$.get('php/lookup.php?query=checkdomain&domain='+domain,
 				function(data){
 					if(data.status == "success"){
 						//add to the names array
